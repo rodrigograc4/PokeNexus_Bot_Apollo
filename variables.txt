@@ -1,0 +1,46 @@
+DISCORD: ----------
+Discord_ID: 0000000000000000
+Spam: Spam
+BROWSER CHOSED: ----------
+Pixel_X: 0
+Pixel_Y: 0
+LOGIN: ----------
+Username: username
+Password: password
+MINING: ----------
+Red: 1
+Blue: 1
+Green: 1
+Prism: 1
+Pale: 1
+Dark: 1
+Rainbow: 1
+Gold: 1
+FIGHT: ----------
+Attack_Move: 1
+AUTO-CATCH OR STOP: ----------
+Auto-Catch: 1
+CATCH SHINY POKEMON: ----------
+Catch_Shiny: 1
+FIGHT OR RUN: ----------
+Fight_Run: Fight
+RUN FROM ELITE POKEMON: ----------
+Run_Elite: 1
+BREAK EVERY X TIME: ----------
+Take_a_Break: 0
+Break_Time: 20
+Every_X: 180
+CLOSE AFTER X TIME: ----------
+Close: 0
+After_X: 1
+HEALING: ----------
+Heal: 1
+Less_Than: Less than 75%
+POTIONS: ----------
+Potion: 1
+Super_Potion: 1
+Hyper_Potion: 1
+POKEMONS TO STOP: ----------
+Catch: List of Pokemons to Catch :, Mew
+POKEMONS TO KILL:
+EV: List of Pokemons to Kill :, Rattata
