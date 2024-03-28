@@ -1,11 +1,11 @@
-# PPlanet Apollo 🦊
+# PkNexus Apollo 🦊
 
-PPlanet Apollo is a Bot for Pokemon Planet Online Unity, that can do Grinding, Fishing and Mining.
+PkNexus Apollo is a Bot for PokeNexus (Pokemon Planet) Online Unity, that can do Grinding, Fishing, Mining and EV Training.
 
 <img src="https://github.com/rodrigograc4/PPlanet-Apollo/blob/main/image.png" width="50%" />
 
 ## Why it exists ?
-All the PPO players know that the game requires a lot of time and effort because its essencially a grinding game, so this Bot is for the people who don't have that much time or just find it boring, but still want to have fun getting good pokemon and battling.
+All the PokeNexus players know that the game requires a lot of time and effort because its essencially a grinding game, so this Bot is for the people who don't have that much time or just find it boring, but still want to have fun getting good pokemon and battling.
 
 
 ## What are all the features ?

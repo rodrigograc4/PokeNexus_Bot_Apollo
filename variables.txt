@@ -1,5 +1,5 @@
 DISCORD: ----------
-Discord_ID: 0000000000000000
+Discord_ID: 00000000
 Spam: Spam
 BROWSER CHOSED: ----------
 Pixel_X: 0
@@ -7,6 +7,9 @@ Pixel_Y: 0
 LOGIN: ----------
 Username: username
 Password: password
+IN GAME LOGIN: ----------
+InGameUsername: username
+InGamePassword: password
 MINING: ----------
 Red: 1
 Blue: 1
@@ -25,11 +28,11 @@ Catch_Shiny: 1
 FIGHT OR RUN: ----------
 Fight_Run: Fight
 RUN FROM ELITE POKEMON: ----------
-Run_Elite: 1
+Run_Elite: 0
 BREAK EVERY X TIME: ----------
-Take_a_Break: 0
-Break_Time: 20
-Every_X: 180
+Take_a_Break: 1
+Break_Time: 1
+Every_X: 1
 CLOSE AFTER X TIME: ----------
 Close: 0
 After_X: 1
@@ -43,4 +46,4 @@ Hyper_Potion: 1
 POKEMONS TO STOP: ----------
 Catch: List of Pokemons to Catch :, Mew
 POKEMONS TO KILL:
-EV: List of Pokemons to Kill :, Rattata
+EV: List of Pokemons to Kill :, Graveler
