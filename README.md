@@ -32,7 +32,7 @@ Simple download this zip file and you can see the .exe file of the bot, but you 
 
 
 ## Discord
-Server: https://discord.gg/CBybFCNm
+Server: https://discord.gg/YWRyGww3r7
 
 My Username: blu3unicorn
 
