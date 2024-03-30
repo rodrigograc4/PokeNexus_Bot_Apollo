@@ -1,4 +1,4 @@
-# PkNexus Apollo 🦊
+# 🦊 PkNexus Apollo
 
 PkNexus Apollo is a Bot for PokeNexus (Pokemon Planet) Online Unity, that can do Grinding, Fishing, Mining and EV Training.
 
