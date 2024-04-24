@@ -1,5 +1,5 @@
 DISCORD: ----------
-Discord_ID: 00000000
+Discord_ID: 0000000000
 Spam: Spam
 BROWSER CHOSED: ----------
 Pixel_X: 0
@@ -8,7 +8,7 @@ LOGIN: ----------
 Username: username
 Password: password
 IN GAME LOGIN: ----------
-InGameUsername: username
+InGameUsername: ingameusername
 InGamePassword: password
 MINING: ----------
 Red: 1
@@ -21,6 +21,7 @@ Rainbow: 1
 Gold: 1
 FIGHT: ----------
 Attack_Move: 1
+Most_Effective_Attack: 1
 AUTO-CATCH OR STOP: ----------
 Auto-Catch: 1
 CATCH SHINY POKEMON: ----------
@@ -28,19 +29,19 @@ Catch_Shiny: 1
 FIGHT OR RUN: ----------
 Fight_Run: Fight
 RUN FROM ELITE POKEMON: ----------
-Run_Elite: 0
+Run_Elite: 1
 BREAK EVERY X TIME: ----------
 Take_a_Break: 1
-Break_Time: 1
-Every_X: 1
+Break_Time: 20
+Every_X: 180
 CLOSE AFTER X TIME: ----------
 Close: 0
-After_X: 1
+After_X: 80
 HEALING: ----------
 Heal: 1
 Less_Than: Less than 75%
 POTIONS: ----------
-Potion: 1
+Potion: 0
 Super_Potion: 1
 Hyper_Potion: 1
 POKEMONS TO STOP: ----------
