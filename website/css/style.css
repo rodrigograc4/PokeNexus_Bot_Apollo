@@ -1,0 +1,78 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: top;
+  background-size: cover;
+  background-image: url("/website/images/map.png");
+  min-height: 85%;
+}
+
+.footerimg-1 {
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("/website/images/map.png");
+}
+
+.commentimg-1 {
+  background-position: top;
+  background-size: cover;
+  background-image: url("/website/images/map.png");
+}
+
+.blackopacity {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.discord-container {
+  width: 20em;
+  height: 11em;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+  background-image: url("/website/images/discord.png");
+  background-size: cover;
+}
+
+.discord-container:hover {
+  background-image: url("/website/images/discord_hover.png");
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+.botao {
+  color: white; /* Cor do texto padrão */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.botao:hover {
+  background-color: #db6532 !important; /* Cor de fundo ao passar o mouse */
+  color: white !important; /* Cor do texto ao passar o mouse */
+}
+
+.botaoreverse {
+  border: 2px solid #db6532; /* Borda de 3px sólida com a cor #db6532 */
+  background-color: black !important ; /* Fundo transparente */
+  border-radius: 10px;
+  color: white; /* Cor do texto padrão */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.botaoreverse:hover {
+  background-color: #db6532 !important;
+  color: white !important; /* Cor do texto ao passar o mouse */
+}
+
+.formstyle {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 4px;
+  border: 2px solid white;
+}
