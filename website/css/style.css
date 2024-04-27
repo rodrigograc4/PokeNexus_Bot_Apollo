@@ -9,20 +9,20 @@ body, html {
 .bgimg-1 {
   background-position: top;
   background-size: cover;
-  background-image: url("/website/images/map.png");
+  background-image: url("../../website/images/map.png");
   min-height: 85%;
 }
 
 .footerimg-1 {
   background-position: bottom;
   background-size: cover;
-  background-image: url("/website/images/map.png");
+  background-image: url("../../website/images/map.png");
 }
 
 .commentimg-1 {
   background-position: top;
   background-size: cover;
-  background-image: url("/website/images/map.png");
+  background-image: url("../../website/images/map.png");
 }
 
 .blackopacity {
@@ -34,12 +34,12 @@ body, html {
   height: 11em;
   cursor: pointer;
   transition: background-image 0.3s ease;
-  background-image: url("/website/images/discord.png");
+  background-image: url("../../website/images/discord.png");
   background-size: cover;
 }
 
 .discord-container:hover {
-  background-image: url("/website/images/discord_hover.png");
+  background-image: url("../../website/images/discord_hover.png");
 }
 
 .w3-bar .w3-button {
