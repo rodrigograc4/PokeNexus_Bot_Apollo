@@ -1,6 +1,6 @@
 # 🦊 PokeNexus Apollo
 
-PokeNexus Apollo is a Bot for Poke Nexus (Pokemon Planet) Online Unity, that can do Grinding, Fishing, Mining, EV Training and Battle Tower.
+PokeNexus Apollo is a Bot for Poke Nexus (Pokemon Planet) Online Unity, that can do Grinding, Fishing, Mining, EV Training and Battle Tower grinding.
 
 <img src="https://github.com/rodrigograc4/PPlanet-Apollo/blob/main/image.png" width="50%" />
 
