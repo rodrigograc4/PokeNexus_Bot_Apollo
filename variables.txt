@@ -2,14 +2,14 @@ DISCORD: ----------
 Discord_ID: 0000000000
 Spam: Spam
 BROWSER CHOSED: ----------
-Pixel_X: 0
-Pixel_Y: 0
+Pixel_X: 1
+Pixel_Y: -11
 LOGIN: ----------
 Username: username
 Password: password
 IN GAME LOGIN: ----------
 InGameUsername: ingameusername
-InGamePassword: password
+InGamePassword: ingamepassword
 MINING: ----------
 Red: 1
 Blue: 1
@@ -22,29 +22,33 @@ Gold: 1
 FIGHT: ----------
 Attack_Move: 1
 Most_Effective_Attack: 1
-AUTO-CATCH OR STOP: ----------
+CATCH: ----------
 Auto-Catch: 1
-CATCH SHINY POKEMON: ----------
 Catch_Shiny: 1
+Catch_NonDexed: 0
 FIGHT OR RUN: ----------
 Fight_Run: Fight
 RUN FROM ELITE POKEMON: ----------
 Run_Elite: 1
 BREAK EVERY X TIME: ----------
-Take_a_Break: 1
-Break_Time: 20
-Every_X: 180
+Take_a_Break: 0
+Break_Time: 1
+Every_X: 1
 CLOSE AFTER X TIME: ----------
 Close: 0
-After_X: 80
+After_X: 1
 HEALING: ----------
 Heal: 1
-Less_Than: Less than 75%
+Less_Than: Less than 50%
 POTIONS: ----------
 Potion: 0
 Super_Potion: 1
 Hyper_Potion: 1
+CLOSE WHEN STOP: ---------
+Close_Stuff: 1
+POKEMONS TO CATCH: ----------
+Catch: List of Pokemons to Catch :, Pikachu
 POKEMONS TO STOP: ----------
-Catch: List of Pokemons to Catch :, Mew
+Stop: List of Pokemons to Stop:, Mew
 POKEMONS TO KILL: ----------
-EV: List of Pokemons to Kill :, Graveler
+EV: List of Pokemons to Kill :, Graveler, Golbat, Nidorino, Nidorina
