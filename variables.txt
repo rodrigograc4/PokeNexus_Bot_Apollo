@@ -46,5 +46,5 @@ Super_Potion: 1
 Hyper_Potion: 1
 POKEMONS TO STOP: ----------
 Catch: List of Pokemons to Catch :, Mew
-POKEMONS TO KILL:
+POKEMONS TO KILL: ----------
 EV: List of Pokemons to Kill :, Graveler
