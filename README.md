@@ -31,10 +31,6 @@ All the PokeNexus players know that the game requires a lot of time and effort b
 - Auto Close
 
 
-## How to use it ?
-Simple download this zip file and you can see the .exe file of the bot, but you need to join the discord server to get an account created and the manual to configure it.
-
-
 ## Discord
 Server: https://discord.gg/YWRyGww3r7
 
