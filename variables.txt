@@ -2,8 +2,8 @@ DISCORD: ----------
 Discord_ID: 0000000000
 Spam: Spam
 BROWSER CHOSED: ----------
-Pixel_X: 1
-Pixel_Y: -11
+Pixel_X: 0
+Pixel_Y: -7
 LOGIN: ----------
 Username: username
 Password: password
