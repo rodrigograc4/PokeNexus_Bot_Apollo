@@ -8,8 +8,8 @@ LOGIN: ----------
 Username: username
 Password: password
 IN GAME LOGIN: ----------
-InGameUsername: ingameusername
-InGamePassword: ingamepassword
+InGameUsername: username
+InGamePassword: password
 MINING: ----------
 Red: 1
 Blue: 1
@@ -32,8 +32,8 @@ RUN FROM ELITE POKEMON: ----------
 Run_Elite: 1
 BREAK EVERY X TIME: ----------
 Take_a_Break: 0
-Break_Time: 1
-Every_X: 1
+Break_Time: 30
+Every_X: 120
 CLOSE AFTER X TIME: ----------
 Close: 0
 After_X: 1
@@ -48,7 +48,9 @@ CLOSE WHEN STOP: ---------
 Close_Stuff: 1
 POKEMONS TO CATCH: ----------
 Catch: List of Pokemons to Catch :, Pikachu
+Catch_Sync: Synced Pokemons to Catch:, Gyarados
 POKEMONS TO STOP: ----------
 Stop: List of Pokemons to Stop:, Mew
+Stop_Sync: Synced Pokemons to Stop:, Zapdos
 POKEMONS TO KILL: ----------
-EV: List of Pokemons to Kill :, Graveler, Golbat, Nidorino, Nidorina
+EV: List of Pokemons to Kill :, Graveler
