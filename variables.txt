@@ -7,18 +7,8 @@ Pixel_Y: -7
 LOGIN: ----------
 Username: username
 Password: password
-IN GAME LOGIN: ----------
-InGameUsername: username
-InGamePassword: password
 MINING: ----------
-Red: 1
-Blue: 1
-Green: 1
-Prism: 1
-Pale: 1
-Dark: 1
-Rainbow: 1
-Gold: 1
+Repel_Type: Ultra Repel
 FIGHT: ----------
 Attack_Move: 1
 Most_Effective_Attack: 1
@@ -39,18 +29,20 @@ Close: 0
 After_X: 1
 HEALING: ----------
 Heal: 1
-Less_Than: Less than 50%
+Less_Than: Less than 75%
 POTIONS: ----------
 Potion: 0
 Super_Potion: 1
 Hyper_Potion: 1
 CLOSE WHEN STOP: ---------
 Close_Stuff: 1
+BATTLE TOWER: ----------
+Stat_Boost_Moves: List of Moves to Use First:, Geomancy
 POKEMONS TO CATCH: ----------
 Catch: List of Pokemons to Catch :, Pikachu
 Catch_Sync: Synced Pokemons to Catch:, Gyarados
 POKEMONS TO STOP: ----------
-Stop: List of Pokemons to Stop:, Mew
+Stop: List of Pokemons to Stop:, Mew, Regi
 Stop_Sync: Synced Pokemons to Stop:, Zapdos
 POKEMONS TO KILL: ----------
 EV: List of Pokemons to Kill :, Graveler
