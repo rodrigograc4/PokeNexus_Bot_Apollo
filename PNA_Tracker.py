@@ -19,7 +19,7 @@ tesseract_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 # Global variables
 thread_lock = Lock()
 
-# Functions for reading variables and taking screenshots
+# Functions for reading and saving variables
 def read_variable(key):
     if os.path.exists('variables.txt'):
         with open('variables.txt', "r") as file:
@@ -57,7 +57,7 @@ def pixel_x_variable():
 
 def pixel_y_variable():
     return read_variable("Pixel_Y")
-    
+
 pixel_x = int(pixel_x_variable())
 pixel_y = int(pixel_y_variable())
 
@@ -93,6 +93,7 @@ def screenshot_coord(coordinates):
         scr_bgr = cv2.cvtColor(np.array(screenshot), cv2.COLOR_BGRA2BGR)
         return scr_bgr
 
+# Checks if "vs" image is detected on screen
 def vs_detected():
     screen = screenshot()
     vs_img_path = os.path.join(images_dir, 'vs.png')
@@ -110,6 +111,7 @@ def vs_detected():
     threshold = 0.75
     return np.any(result >= threshold)
 
+# Tracks profit using OCR
 def profit_tracker():
     coordinates = (1511 + pixel_x, 952 + pixel_y, 1690 + pixel_x, 970 + pixel_y)
     img = screenshot_coord(coordinates)
@@ -132,12 +134,11 @@ def profit_tracker():
         print(f"Error in OCR processing: {e}")
     return False
 
-
 text_label_encounters = None
 text_label_profit = None
 text_frame = None
 
-# UI Functions with customtkinter
+# Updates the displayed encounter and profit values
 def update_display():
     global text_label_encounters, text_label_profit, text_frame
     while True:
@@ -158,12 +159,13 @@ def update_display():
             print(f"Error updating display: {e}")
             os.kill(os.getpid(), signal.SIGTERM)
 
+# Sets up the main UI
 def create_display():
     global text_label_encounters, text_label_profit, text_frame
 
     app = CTk()
     app.title("PNA Tracker")
-    app.geometry("530x200")  # Increased height to accommodate buttons
+    app.geometry("530x200")
     app.resizable(False, False)
     app.attributes("-topmost", True)
     app.overrideredirect(True)
@@ -174,11 +176,8 @@ def create_display():
     screen_width = app.winfo_screenwidth()
     x_position = screen_width - 530 - 40
     y_position = 40
-
-    # Apply the calculated position
     app.geometry(f"530x200+{x_position}+{y_position}")
 
-    # Main frame with rounded corners
     main_frame = CTkFrame(app, fg_color="transparent")
     main_frame.pack(fill=ctk.BOTH, expand=True)
 
@@ -196,17 +195,13 @@ def create_display():
     buttons_frame = CTkFrame(main_frame, fg_color="#f5f5f5", bg_color="#f5f5f5")
     buttons_frame.place(relx=0.43, rely=0.5, anchor="center")
 
-    # Function to delete buttons, create and display text labels
+    # Displays encounter and profit values
     def show_value(encounters_text=None, profit_text=None):
         global text_label_encounters, text_label_profit, text_frame
 
-        # Remove the button frame
         buttons_frame.destroy()
-
-        # Create the text frame, but do not display it immediately
         new_text_frame = CTkFrame(main_frame, fg_color="#f5f5f5", bg_color="#f5f5f5")
 
-        # If an encounters value is provided, create and display the encounters label
         if encounters_text is not None:
             text_label_encounters = CTkLabel(
                 new_text_frame,
@@ -218,7 +213,6 @@ def create_display():
             )
             text_label_encounters.pack(pady=(0, 5), padx=0)
 
-        # If a profit value is provided, create and display the profit label
         if profit_text is not None:
             text_label_profit = CTkLabel(
                 new_text_frame,
@@ -230,11 +224,9 @@ def create_display():
             )
             text_label_profit.pack(pady=(0, 5), padx=0)
 
-        # Update the global text frame reference and display the configured frame
         text_frame = new_text_frame
         text_frame.place(relx=0.43, rely=0.5, anchor="center")
 
-    # Adjusted functions to display only the relevant label
     def keep_encounters():
         encounters_value = int(encounters_variable() or 0)
         show_value(encounters_text=f"{encounters_value:,}")
@@ -256,19 +248,17 @@ def create_display():
         Thread(target=update_display, daemon=True).start()
 
     button_font = ("PKMN RBYGSC Regular", 18)
-
     keep_enc_button = ctk.CTkButton(buttons_frame, text="Keep Enc", command=keep_encounters, fg_color="#f5f5f5", hover_color="#d0d0d0", font=button_font, text_color="#2b2b2e")
     keep_profit_button = ctk.CTkButton(buttons_frame, text="Keep Profit", command=keep_profit, fg_color="#f5f5f5", hover_color="#d0d0d0", font=button_font, text_color="#2b2b2e")
     new_enc_button = ctk.CTkButton(buttons_frame, text="New Enc", command=new_encounters, fg_color="#f5f5f5", hover_color="#d0d0d0", font=button_font, text_color="#2b2b2e")
     new_profit_button = ctk.CTkButton(buttons_frame, text="New Profit", command=new_profit, fg_color="#f5f5f5", hover_color="#d0d0d0", font=button_font, text_color="#2b2b2e")
 
-    # Grid layout for buttons
     keep_enc_button.grid(row=0, column=0, padx=10, pady=3)
     keep_profit_button.grid(row=0, column=1, padx=10, pady=3)
     new_enc_button.grid(row=1, column=0, padx=10, pady=3)
     new_profit_button.grid(row=1, column=1, padx=10, pady=3)
 
-    # Functions to drag the window
+    # Window dragging functions
     def on_press(event):
         app.x = event.x
         app.y = event.y
@@ -278,11 +268,8 @@ def create_display():
         y = app.winfo_y() - app.y + event.y
         app.geometry(f"+{x}+{y}")
 
-    # Bind mouse events
     app.bind("<Button-1>", on_press)
     app.bind("<B1-Motion>", on_drag)
-
-    # Start the display update in a separate thread
     app.mainloop()
 
 # Main Function
@@ -310,4 +297,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
