@@ -1,50 +1,64 @@
-DISCORD: ----------
-Discord_ID: 00000000000000
-Spam: Spam
-GAME PATH: ----------
-Poke_Nexus_Path: C:/Users/username/your_path/Poke Nexus.exe
-CALIBRATION: ----------
-Pixel_X: 0
-Pixel_Y: -7
 LOGIN: ----------
 Username: username
 Password: password
-MINING: ----------
-Repel_Type: Ultra Repel
-FIGHT: ----------
+
+CALIBRATION: ----------
+Pixel_X: -8
+Pixel_Y: 21
+
+GRINDING: ----------
 Attack_Move: 1
 Most_Effective_Attack: 1
-CATCH: ----------
+
+MINING: ----------
+Repel_Type: Max Repel
+
+EV_TRAINING: ----------
+EV: List of Pokemons to Kill :, Graveler
+
+BATTLE TOWER: ----------
+Stat_Boost_Moves: List of Moves to Use First:, Geomancy, Dragon Dance
+
+DISCORD: ----------
+Discord_ID: 762637262231961650
+Spam: Spam
+
+POKEMONS TO CATCH: ----------
+Catch_On: 1
+Catch: List of Pokemons to Catch :, Sneasel
+Catch_Sync_On: 1
+Catch_Sync: Synced Pokemons to Catch:, Gyarados
+
+POKEMONS TO STOP: ----------
+Stop_On: 1
+Stop: List of Pokemons to Stop:, Hoopa
+Stop_Sync_On: 1
+Stop_Sync: Synced Pokemons to Stop:, Gible
+Close_Stuff: 0
+Shutdown_PC: 0
+
+HEALING: ----------
+Heal: 1
+Less_Than: Less than 75%
+Potion: 0
+Super_Potion: 0
+Hyper_Potion: 1
+
+SETTINGS: ----------
 Auto-Catch: 1
 Catch_Shiny: 1
 Catch_NonDexed: 0
-FIGHT OR RUN: ----------
 Fight_Run: Fight
-RUN FROM ELITE POKEMON: ----------
 Run_Elite: 1
+
 BREAK EVERY X TIME: ----------
 Take_a_Break: 0
 Break_Time: 30
 Every_X: 120
+
 CLOSE AFTER X TIME: ----------
 Close: 0
 After_X: 1
-HEALING: ----------
-Heal: 1
-Less_Than: Less than 50%
-POTIONS: ----------
-Potion: 0
-Super_Potion: 0
-Hyper_Potion: 1
-CLOSE WHEN STOP: ---------
-Close_Stuff: 0
-BATTLE TOWER: ----------
-Stat_Boost_Moves: List of Moves to Use First:, Geomancy
-POKEMONS TO CATCH: ----------
-Catch: List of Pokemons to Catch :, Pikachu
-Catch_Sync: Synced Pokemons to Catch:, Gyarados
-POKEMONS TO STOP: ----------
-Stop: List of Pokemons to Stop:, Mew
-Stop_Sync: Synced Pokemons to Stop:, Gible
-POKEMONS TO KILL: ----------
-EV: List of Pokemons to Kill :, Graveler
+
+GAME PATH: ----------
+Poke_Nexus_Path: C:/Users/user/Desktop/Projetos/PokeNexus/Game/Poke Nexus.exe
